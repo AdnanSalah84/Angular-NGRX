@@ -1,8 +1,7 @@
 import { Product } from '../product';
 import * as fromRoot from '../../state/app.state';
-import { InitializeCurrentProduct } from './product.actions';
+import { InitializeCurrentProduct, ProductActionTypes, ToggleProductCode, ProductActions } from './product.actions';
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { ProductActions, ToggleProductCode, ProductActionTypes } from './product.actions';
 
 export interface State extends fromRoot.State {
   products: ProductState
@@ -66,6 +65,11 @@ export function reducer(state = initialState, action: ProductActions): ProductSt
           description: '',
           starRating: 0
         }
+      };
+      case ProductActionTypes.LoadSuccess:
+      return {
+        ...state,
+        products: action.payload
       };
     default:
       return state;
