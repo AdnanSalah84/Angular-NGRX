@@ -21,7 +21,7 @@ const initialState: ProductState = {
   error:''
 }
 
-const getProductFeatureState = createFeatureSelector < ProductState > ('products');
+const getProductFeatureState = createFeatureSelector <ProductState> ('products');
 
 export const getShowProductCode = createSelector(
   getProductFeatureState,
