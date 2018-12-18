@@ -10,6 +10,8 @@ import { Product } from './product';
   providedIn: 'root',
 })
 export class ProductService {
+  // NOTE:
+  // Try 'api/productszzzzz' for showing error message
   private productsUrl = 'api/products';
   //private products: Product[];
 
