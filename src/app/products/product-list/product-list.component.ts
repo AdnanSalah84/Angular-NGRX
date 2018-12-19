@@ -18,7 +18,7 @@ import * as productActions from '../state/product.actions';
 })
 export class ProductListComponent implements OnInit, OnDestroy {
   pageTitle = 'Products';
-  errorMessage: string;
+  //errorMessage: string;
   displayCode: boolean;
   products: Product[];
   // Used to highlight the selected product in the list
