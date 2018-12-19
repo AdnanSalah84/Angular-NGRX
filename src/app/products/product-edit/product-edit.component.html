@@ -16,8 +16,8 @@
                    placeholder="Name (required)"
                    formControlName="productName"
                    (blur)="blur()" />
-            <span class="invalid-feedback" *ngIf="displayMessage.productName">
-              {{displayMessage.productName}}
+            <span class="invalid-feedback" *ngIf="displayMessage['productName']">
+              {{displayMessage['productName']}}
             </span>
           </div>
         </div>
@@ -33,8 +33,8 @@
                    placeholder="Code (required)"
                    formControlName="productCode"
                    (blur)="blur()" />
-            <span class="invalid-feedback" *ngIf="displayMessage.productCode">
-              {{displayMessage.productCode}}
+            <span class="invalid-feedback" *ngIf="displayMessage['productCode']">
+              {{displayMessage['productCode']}}
             </span>
           </div>
         </div>
@@ -49,8 +49,8 @@
                    type="text"
                    placeholder="Rating"
                    formControlName="starRating" />
-            <span class="invalid-feedback" *ngIf="displayMessage.starRating">
-              {{displayMessage.starRating}}
+            <span class="invalid-feedback" *ngIf="displayMessage['starRating']">
+              {{displayMessage['starRating']}}
             </span>
           </div>
         </div>
@@ -66,8 +66,8 @@
                       rows=3
                       formControlName="description">
             </textarea>
-            <span class="invalid-feedback" *ngIf="displayMessage.description">
-              {{ displayMessage.description}}
+            <span class="invalid-feedback" *ngIf="displayMessage['description']">
+              {{ displayMessage['description'] }}
             </span>
           </div>
         </div>
